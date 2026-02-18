@@ -1,0 +1,19 @@
+defaults:
+  - base
+
+pillar: 3
+
+env:
+  state_dim: 4
+  action_dim: 2
+  max_steps: 100
+  reward_scale: 1.0
+
+policy:
+  hidden_sizes: [64, 64]
+  lr: 0.001
+
+training:
+  rounds: 20
+  clients_per_round: 2
+  steps_per_round: 500

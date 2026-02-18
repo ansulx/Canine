@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fedstable"
+version = "0.1.0"
+description = "Federated Learning for Stablecoin & DeFi Systemic Risk — production-grade privacy-preserving risk prediction"
+readme = "README.md"
+license = { text = "Apache-2.0" }
+requires-python = ">=3.10"
+authors = [
+    { name = "Canine", role = "maintainer" }
+]
+keywords = [
+    "federated-learning",
+    "stablecoin",
+    "defi",
+    "systemic-risk",
+    "privacy-preserving-ml",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Financial and Insurance Industry",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+[project.optional-dependencies]
+api = ["fastapi>=0.100", "uvicorn>=0.22"]
+dp = ["opacus>=1.4"]
+dev = ["pytest>=7", "pytest-cov>=4"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["fedstable*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

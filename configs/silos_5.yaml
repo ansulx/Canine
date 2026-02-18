@@ -1,0 +1,13 @@
+partition_strategy: random
+num_silos: 5
+silos:
+  - id: 0
+    name: silo_0
+  - id: 1
+    name: silo_1
+  - id: 2
+    name: silo_2
+  - id: 3
+    name: silo_3
+  - id: 4
+    name: silo_4

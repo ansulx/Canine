@@ -1,0 +1,40 @@
+defaults:
+  - base
+
+pillar: 1
+
+model:
+  type: lstm
+  input_size: 8
+  hidden_size: 64
+  num_layers: 2
+  dropout: 0.2
+  num_horizons: 3
+
+training:
+  rounds: 50
+  clients_per_round: 3
+  local_epochs: 2
+  batch_size: 32
+  learning_rate: 0.001
+  optimizer: adam
+
+data:
+  silo_config: configs/silos_3.yaml
+  sequence_length: 24
+  horizon: 6
+  train_ratio: 0.7
+  val_ratio: 0.1
+
+evaluation:
+  central_eval_every: 5
+  metrics:
+    - auc_roc
+    - auc_pr
+    - brier_score
+
+privacy:
+  dp:
+    enabled: false
+    clip_norm: 1.0
+    noise_scale: 0.01

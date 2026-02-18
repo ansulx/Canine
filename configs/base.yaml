@@ -1,0 +1,7 @@
+seed: 42
+device: cuda  # or cpu
+data_root: ./data
+processed_dir: ./data/processed
+raw_dir: ./data/raw
+artifacts_dir: ./artifacts
+log_level: INFO

@@ -1,0 +1,7 @@
+partition_strategy: by_protocol_type
+num_silos: 2
+silos:
+  - id: 0
+    name: lending
+  - id: 1
+    name: dex

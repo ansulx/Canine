@@ -1,0 +1,15 @@
+partition_strategy: by_stablecoin
+num_silos: 3
+silos:
+  - id: 0
+    name: silo_usdc
+    filter:
+      stablecoin: USDC
+  - id: 1
+    name: silo_usdt
+    filter:
+      stablecoin: USDT
+  - id: 2
+    name: silo_dai
+    filter:
+      stablecoin: DAI

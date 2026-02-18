@@ -1,0 +1,21 @@
+defaults:
+  - base
+
+pillar: 2
+
+model:
+  type: gcn
+  in_channels: 8
+  hidden_channels: 32
+  out_channels: 1
+  num_layers: 2
+
+training:
+  rounds: 30
+  clients_per_round: 2
+  local_epochs: 3
+  learning_rate: 0.01
+
+data:
+  graph_global_path: ${processed_dir}/graph_global.pt
+  silo_config: configs/silos_graph_2.yaml

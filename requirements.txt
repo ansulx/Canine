@@ -1,0 +1,35 @@
+# FedStable — Federated Learning for Stablecoin & DeFi Systemic Risk
+# Python 3.10+
+
+# FL
+flwr[simulation]>=1.25.0
+
+# Deep learning
+torch>=2.0.0
+torchvision>=0.15.0
+
+# Graph
+torch_geometric>=2.3.0
+
+# Data
+pandas>=2.0.0
+numpy>=1.24.0
+pyarrow>=12.0.0
+
+# Config and utils
+pyyaml>=6.0
+omegaconf>=2.3.0
+
+# Evaluation
+scikit-learn>=1.3.0
+
+# Optional: API
+# fastapi>=0.100.0
+# uvicorn>=0.22.0
+
+# Optional: DP
+# opacus>=1.4.0
+
+# Dev / tests
+pytest>=7.0.0
+pytest-cov>=4.0.0

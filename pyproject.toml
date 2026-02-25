@@ -10,7 +10,7 @@ readme = "README.md"
 license = { text = "Apache-2.0" }
 requires-python = ">=3.10"
 authors = [
-    { name = "Canine", role = "maintainer" }
+    { name = "Canine" }
 ]
 keywords = [
     "federated-learning",

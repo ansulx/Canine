@@ -62,3 +62,4 @@ logs/
 
 # DVC
 .dvc/
+dashboard/node_modules/
